@@ -121,6 +121,7 @@
               <div class="field">
                 <label for="neededByDate">Do you need the items by a certain date?</label>
                 <input type="date" id="neededByDate" name="neededByDate" />
+                <p class="rush-warn" id="alt-rush-warn">⚠ Rush order fees apply.</p>
               </div>
               <div class="field">
                 <label for="eventDate">Event Date (Wedding/Special Event)</label>
@@ -196,6 +197,16 @@
 <script src="../layout.js"></script>
 <script>
 (function () {
+  /* Rush order warning on needed-by date */
+  var neededByDate = document.getElementById('neededByDate');
+  var altRushWarn  = document.getElementById('alt-rush-warn');
+  var MS_14_DAYS   = 14 * 24 * 60 * 60 * 1000;
+  neededByDate.addEventListener('change', function () {
+    if (!this.value) { altRushWarn.classList.remove('on'); return; }
+    var diff = new Date(this.value).getTime() - Date.now();
+    altRushWarn.classList.toggle('on', diff > 0 && diff < MS_14_DAYS);
+  });
+
   /* Conditional referral field */
   var howHear = document.getElementById('howHear');
   var referralField = document.getElementById('referral-field');

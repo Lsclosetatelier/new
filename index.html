@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L's Closet Atelier</title>
+  <meta name="description" content="Precision-cut couture and expert alterations for the competitive stage and beyond." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+
+<div class="page-wrapper">
+
+  <!-- HEADER -->
+  <header class="site-header home-start" id="site-header">
+    <a href="/" class="site-logo">L'S CLOSET ATELIER</a>
+    <nav class="site-nav">
+      <a href="alteration/">Alteration Requests</a>
+      <a href="costume/">Couture Costumes</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" aria-label="Open menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+    </button>
+  </header>
+
+  <!-- MOBILE BACKDROP -->
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  <!-- MOBILE PANEL -->
+  <div class="mobile-panel" id="mobile-panel">
+    <button class="mobile-close" id="mobile-close" aria-label="Close menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <a href="/">Home</a>
+    <a href="alteration/">Alteration Requests</a>
+    <a href="costume/">Couture Costumes</a>
+    <div class="mobile-divider"></div>
+    <a href="privacy/" class="mobile-small">Privacy Policy</a>
+    <a href="terms/" class="mobile-small">Terms of Service</a>
+    <a href="https://venmo.com/code?user_id=4605407506990469447&created=1779775604.002775&printed=1" target="_blank" rel="noopener noreferrer" class="mobile-small">Pay Invoice</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <img src="images/atelier-hero.png" alt="Couture competitive dance dress bodice" class="hero-img" />
+      <div class="hero-grad-b"></div>
+      <div class="hero-grad-t"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Movement <br/><em>Designed.</em>
+        </h1>
+        <p class="hero-sub">Precision-cut couture and expert alterations for the competitive stage and beyond.</p>
+        <a href="#services" class="hero-cta">
+          Explore Our Services
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy">
+      <div class="phil-img">
+        <img src="images/dancer-garden.jpg" alt="Dancer in garden" />
+      </div>
+      <div class="phil-text">
+        <h2>The Discipline of <br/><em>Glamour.</em></h2>
+        <p>A competitive dress is not merely worn; it is performed in. It must breathe, stretch, and sculpt without compromising an ounce of its visual drama.</p>
+        <p>At L's Closet Atelier, we approach each garment with the rigor of an architect and the eye of an artist. From intricate beadwork that catches the stage lights to structural alterations that ensure perfect fit under extreme movement, our craft elevates your performance.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="services-inner">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <a href="alteration/" class="service-card">
+            <div>
+              <span class="service-tag">Refinement</span>
+              <h3>Alteration Requests</h3>
+              <p>Impeccable adjustments for fit, structure, and movement. Whether it is a slight hem or a complete bodice reconstruction.</p>
+            </div>
+            <div class="service-cta">
+              Request Service
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </div>
+          </a>
+          <a href="costume/" class="service-card">
+            <div>
+              <span class="service-tag">Creation</span>
+              <h3>Couture Costumes</h3>
+              <p>Bespoke competitive wear designed exclusively for your choreography and body. From sketch to the final stone.</p>
+            </div>
+            <div class="service-cta">
+              Begin Commission
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote-section">
+      <div class="quote-inner">
+        <h2>Our Philosophy</h2>
+        <blockquote>"True luxury is found in the absence of the unnecessary. It is the perfect seam, the flawless drape, the quiet confidence of a garment built entirely around you."</blockquote>
+        <div class="quote-rule"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-hr"></div>
+    <div class="footer-inner">
+      <p>© <span class="copyright-year"></span> L's Closet Atelier. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://instagram.com/lscloset.atelier" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="mailto:lsclosetatelier@gmail.com" aria-label="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="privacy/">Privacy Policy</a>
+        <a href="terms/">Terms of Service</a>
+        <a href="https://venmo.com/code?user_id=4605407506990469447&created=1779775604.002775&printed=1" target="_blank" rel="noopener noreferrer">Pay Invoice</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="layout.js"></script>
+</body>
+</html>
